@@ -14,7 +14,7 @@ textadventure-tui      # Vollbild-Oberfläche (Panels, Menü, Retro-Look), Linux
 pytest
 ```
 
-TUI-Tasten: Esc Menü · Strg+N neues Spiel · F1 Hilfe · F2 Seitenleiste · F3 Eingabe oben/unten · F4 Grün/Bernstein · Strg+Q Beenden
+TUI-Tasten: Esc Menü · Strg+N neues Spiel · F1 Hilfe · F2 Seitenleiste · F3 Eingabe oben/unten · F4 Farbthema (Grün, Bernstein, Eis, Pergament) · Strg+Q Beenden
 
 ## Struktur
 
