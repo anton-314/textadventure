@@ -1,0 +1,29 @@
+[project]
+name = "textadventure"
+version = "0.1.0"
+description = "Text-Adventure mit optionaler KI-Unterstützung (Arbeitstitel)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+ai = ["anthropic"]
+tui = ["textual>=0.80"]
+dev = ["pytest"]
+
+[project.scripts]
+textadventure = "textadventure.__main__:main"
+textadventure-tui = "textadventure.tui:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools.package-data]
+textadventure = ["data/*.json"]

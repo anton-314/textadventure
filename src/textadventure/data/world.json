@@ -1,0 +1,133 @@
+{
+  "start": "hof",
+  "rooms": {
+    "hof": {
+      "name": "Verfallener Hof",
+      "description": "Ein überwucherter Innenhof. Im Norden ragt ein altes Torhaus auf.",
+      "exits": {
+        "norden": "torhaus"
+      },
+      "items": [
+        "laterne"
+      ]
+    },
+    "torhaus": {
+      "name": "Torhaus",
+      "description": "Ein dunkler, kalter Raum. Eine Treppe führt nach unten. Im Osten sitzt eine schwere Eichentür im Mauerwerk, ihr Schlüsselloch ist groß wie eine Faust.",
+      "exits": {
+        "süden": "hof",
+        "unten": "keller",
+        "osten": {
+          "to": "wachstube",
+          "door": "eichentür"
+        }
+      },
+      "items": []
+    },
+    "keller": {
+      "name": "Keller",
+      "description": "Es riecht nach feuchtem Stein. In einer Ecke liegt etwas Glänzendes.",
+      "exits": {
+        "oben": "torhaus"
+      },
+      "items": [
+        "schlüssel"
+      ]
+    },
+    "wachstube": {
+      "name": "Verlassene Wachstube",
+      "description": "Ein umgestürzter Tisch liegt zwischen zersprungenen Krügen, im kalten Kamin türmt sich alte Asche. An der Wand hängen leere Haken, als hätte jemand es eilig gehabt. In der Ecke windet sich eine schmale Stiege nach oben.",
+      "exits": {
+        "westen": {
+          "to": "torhaus",
+          "door": "eichentür"
+        },
+        "oben": "turmzimmer"
+      },
+      "items": [
+        "wachbuch"
+      ]
+    },
+    "turmzimmer": {
+      "name": "Turmzimmer",
+      "description": "Durch eine schmale Schießscharte fällt graues Licht. Tief unten liegt der verfallene Hof, und der Wind pfeift leise durch den Stein.",
+      "exits": {
+        "unten": "wachstube"
+      },
+      "items": [
+        "siegelring"
+      ]
+    }
+  },
+  "doors": {
+    "eichentür": {
+      "name": "Eichentür",
+      "description": "Schwarzes, rissiges Eichenholz mit Eisenbändern. Das Schlüsselloch ist so groß, dass nur ein gewaltiger Eisenschlüssel hineinpassen kann.",
+      "key": "schlüssel",
+      "locked_text": "Die Eichentür rührt sich nicht. Das große Schloss hält sie fest verschlossen.",
+      "open_text": "Der Schlüssel dreht sich knirschend. Die Eichentür schwingt mit einem langen Stöhnen auf."
+    }
+  },
+  "items": {
+    "laterne": {
+      "name": "Laterne",
+      "description": "Eine rostige Öllaterne, noch halb voll.",
+      "takeable": true
+    },
+    "schlüssel": {
+      "name": "Schlüssel",
+      "description": "Ein schwerer Eisenschlüssel, groß genug für ein Torschloss. Am Bart ist ein Wappen eingeprägt.",
+      "takeable": true
+    },
+    "wachbuch": {
+      "name": "Wachbuch",
+      "description": "Ein feuchtes, wellig gewordenes Buch. Die letzte lesbare Zeile lautet: \"Der Hauptmann trug den Siegelring stets bei sich und ließ ihn oben im Turm, als wir gingen.\"",
+      "takeable": true
+    },
+    "siegelring": {
+      "name": "Siegelring",
+      "description": "Ein schwerer Eisenring mit eingraviertem Wappen. Es gleicht jenem über dem Torbogen.",
+      "takeable": true
+    }
+  },
+  "achievements": [
+    {
+      "id": "lichtbringer",
+      "name": "Lichtbringer",
+      "description": "Die Laterne an dich genommen.",
+      "when": {
+        "event": "item_taken",
+        "item": "laterne"
+      }
+    },
+    {
+      "id": "eingelassen",
+      "name": "Eingelassen",
+      "description": "Die Eichentür geöffnet.",
+      "when": {
+        "event": "door_opened",
+        "door": "eichentür"
+      }
+    },
+    {
+      "id": "entdecker",
+      "name": "Entdecker",
+      "description": "Alle Orte der Burg betreten.",
+      "when": {
+        "event": "room_entered",
+        "first": true,
+        "count": 4
+      }
+    },
+    {
+      "id": "siegeltraeger",
+      "name": "Siegelträger",
+      "description": "Den Siegelring gefunden.",
+      "when": {
+        "event": "item_taken",
+        "item": "siegelring"
+      },
+      "hidden": true
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "_directions": {
+    "norden": [
+      "n",
+      "norden",
+      "nord"
+    ],
+    "süden": [
+      "s",
+      "süden",
+      "süd"
+    ],
+    "osten": [
+      "o",
+      "osten",
+      "ost"
+    ],
+    "westen": [
+      "w",
+      "westen",
+      "west"
+    ],
+    "oben": [
+      "h",
+      "oben",
+      "hoch",
+      "rauf",
+      "hinauf",
+      "herauf"
+    ],
+    "unten": [
+      "u",
+      "unten",
+      "runter",
+      "hinunter",
+      "herunter",
+      "hinab"
+    ]
+  },
+  "go": {
+    "group": "Bewegung",
+    "usage": "gehe <Richtung>",
+    "info": "Bewege dich. Richtungen: norden, süden, osten, westen, oben, unten (oder n, s, o, w, h, u).",
+    "aliases": [
+      "gehe",
+      "geh",
+      "gehen",
+      "lauf",
+      "laufe",
+      "renne",
+      "wandere",
+      "bewege dich",
+      "begib dich",
+      "go",
+      "walk"
+    ]
+  },
+  "look": {
+    "group": "Umschauen",
+    "usage": "schau",
+    "info": "Beschreibt den aktuellen Raum noch einmal.",
+    "aliases": [
+      "schau",
+      "schaue",
+      "guck",
+      "gucke",
+      "gucken",
+      "umsehen",
+      "umschauen",
+      "umgucken",
+      "schau dich um",
+      "schaue dich um",
+      "sieh dich um",
+      "sehe dich um",
+      "guck dich um",
+      "gucke dich um",
+      "wo bin ich",
+      "umgebung",
+      "look",
+      "l"
+    ]
+  },
+  "look_at": {
+    "group": "Umschauen",
+    "usage": "untersuche <Ding>",
+    "info": "Betrachte einen Gegenstand oder eine Tür genauer. Oft steckt ein Hinweis in der Beschreibung.",
+    "aliases": [
+      "untersuche",
+      "untersuch",
+      "untersuchen",
+      "betrachte",
+      "betrachten",
+      "begutachte",
+      "inspiziere",
+      "prüfe",
+      "mustere",
+      "schau dir * an",
+      "schaue dir * an",
+      "sieh dir * an",
+      "sehe dir * an",
+      "guck dir * an",
+      "gucke dir * an",
+      "schau * an",
+      "schaue * an",
+      "sieh * an",
+      "guck * an",
+      "gucke * an",
+      "look at",
+      "examine",
+      "inspect",
+      "x"
+    ]
+  },
+  "take": {
+    "group": "Gegenstände",
+    "usage": "nimm <Ding>",
+    "info": "Nimm einen Gegenstand aus dem Raum mit.",
+    "aliases": [
+      "nimm",
+      "nehme",
+      "nehm",
+      "nimm dir",
+      "nehm dir",
+      "nehme dir",
+      "hole",
+      "hol",
+      "schnapp dir",
+      "sammle",
+      "greife",
+      "greif",
+      "hebe * auf",
+      "heb * auf",
+      "stecke * ein",
+      "pack * ein",
+      "take",
+      "get",
+      "grab"
+    ]
+  },
+  "drop": {
+    "group": "Gegenstände",
+    "usage": "lasse <Ding>",
+    "info": "Lege einen Gegenstand aus deinem Inventar im Raum ab.",
+    "aliases": [
+      "lasse",
+      "lass",
+      "lege",
+      "leg",
+      "lasse * fallen",
+      "lass * fallen",
+      "lege * ab",
+      "leg * ab",
+      "wirf * weg",
+      "wirf weg",
+      "drop"
+    ]
+  },
+  "open": {
+    "group": "Gegenstände",
+    "usage": "öffne <Tür> [mit <Schlüssel>]",
+    "info": "Öffne eine Tür. Der passende Schlüssel muss im Inventar liegen; optional mit 'mit <Schlüssel>'.",
+    "aliases": [
+      "öffne",
+      "öffnen",
+      "schließe auf",
+      "schließe * auf",
+      "schließ * auf",
+      "sperre auf",
+      "sperre * auf",
+      "entsperre",
+      "entriegle",
+      "mach * auf",
+      "mache * auf",
+      "mach auf",
+      "mache auf",
+      "open",
+      "unlock"
+    ]
+  },
+  "inventory": {
+    "group": "Übersicht",
+    "usage": "inventar",
+    "info": "Zeigt, was du bei dir trägst.",
+    "aliases": [
+      "inventar",
+      "inv",
+      "i",
+      "rucksack",
+      "tasche",
+      "beutel",
+      "was habe ich",
+      "was trage ich",
+      "meine sachen",
+      "zeige inventar",
+      "zeig inventar",
+      "inventar anzeigen",
+      "inventory",
+      "items"
+    ]
+  },
+  "map": {
+    "group": "Übersicht",
+    "usage": "karte",
+    "info": "Zeigt die Karte der Ebene, auf der du bist. Nur Erkundetes wird eingetragen. [@] = du, [?] = unerforscht, + = verschlossene Tür.",
+    "aliases": [
+      "karte",
+      "map",
+      "m",
+      "zeige karte",
+      "zeig karte",
+      "karte anzeigen",
+      "weltkarte"
+    ],
+    "free": true
+  },
+  "achievements": {
+    "group": "Übersicht",
+    "usage": "erfolge",
+    "info": "Zeigt deine Erfolge. Manche sind versteckt (???).",
+    "aliases": [
+      "erfolge",
+      "erfolg",
+      "achievements",
+      "errungenschaften",
+      "zeige erfolge",
+      "zeig erfolge"
+    ],
+    "free": true
+  },
+  "save": {
+    "group": "Spielstand",
+    "usage": "speichere <Slot>",
+    "info": "Speichert das Spiel in einen Slot (a-z, 0-9, _ und -). Ohne Angabe: Slot 'slot1'. Autosave läuft automatisch.",
+    "aliases": [
+      "speichere",
+      "speicher",
+      "speichern",
+      "save",
+      "spiel speichern"
+    ],
+    "free": true
+  },
+  "load": {
+    "group": "Spielstand",
+    "usage": "lade <Slot>",
+    "info": "Lädt einen Spielstand. Ohne Angabe: der letzte Autosave ('auto').",
+    "aliases": [
+      "lade",
+      "laden",
+      "load",
+      "spiel laden",
+      "spielstand laden",
+      "lade spielstand"
+    ],
+    "free": true
+  },
+  "slots": {
+    "group": "Spielstand",
+    "usage": "spielstände",
+    "info": "Listet alle gespeicherten Spielstände.",
+    "aliases": [
+      "spielstände",
+      "spielstand",
+      "slots",
+      "saves",
+      "zeige spielstände",
+      "zeig spielstände",
+      "liste spielstände"
+    ],
+    "free": true
+  },
+  "help": {
+    "group": "System",
+    "usage": "hilfe",
+    "info": "Zeigt diese Übersicht.",
+    "aliases": [
+      "hilfe",
+      "help",
+      "?",
+      "befehle",
+      "cheatsheet",
+      "anleitung",
+      "hilf",
+      "hilf mir",
+      "was kann ich tun"
+    ],
+    "free": true
+  },
+  "quit": {
+    "group": "System",
+    "usage": "ende",
+    "info": "Beendet das Spiel.",
+    "aliases": [
+      "ende",
+      "quit",
+      "exit",
+      "beenden",
+      "spiel beenden",
+      "tschüss"
+    ],
+    "free": true
+  }
+}
